@@ -1,5 +1,7 @@
+"use client"
+
+import  deviceContext  from '@/contexts/DeviceContext'; 
 import { useContext } from 'react';
-import  deviceContext  from '@/contexts/DeviceContext';  // adjust path
 
 export function useDevice() {
   const context = useContext(deviceContext);

@@ -1,3 +1,4 @@
+'use client'
 import { createContext, useEffect, useState } from 'react';
 
 type DeviceContextType = {
@@ -7,7 +8,7 @@ type DeviceContextType = {
 
  const deviceContext = createContext<DeviceContextType | null>(null);
 
-function DeviceProvider({children}: {children: React.ReactNode}) {
+export function DeviceProvider({children}: {children: React.ReactNode}) {
 
     const [isMobile, setIsMobile] = useState(false);
 
